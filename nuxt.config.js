@@ -42,5 +42,5 @@ module.exports = {
       families: ['Noto+Sans+JP','Raleway']
     }
   },
-  mode: 'universal',
+  mode: 'spa',
 }

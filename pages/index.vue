@@ -1,19 +1,22 @@
 <template lang="pug">
   section.container
-   h1 toppage
+    cursorPointer
+    h1 toppage
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import cursorPointer from '@/components/cursorPointer'
 
 export default {
   components: {
-    AppLogo
+    cursorPointer
+  },
+  mounted(){
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 h1{
   color: red;
 }
