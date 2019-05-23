@@ -1,7 +1,6 @@
 <template lang="pug">
   .container
     cursorPointer
-
     section
       .first
         .first__wrap
@@ -14,7 +13,7 @@
 <script>
 import * as animationData from "~/assets/json/my_logo.json";
 import Lottie from "~/components/Lottie.vue";
-import cursorPointer from '@/components/cursorPointer'
+import cursorPointer from '~/components/cursorPointer'
 
 export default {
   components: {
@@ -29,8 +28,6 @@ export default {
       },
     }
   },
-  mounted(){
-  }
 }
 </script>
 
