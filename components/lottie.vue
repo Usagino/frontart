@@ -1,41 +1,40 @@
 <template>
-    <div :style="style" ref="lavContainer"></div>
+  <div :style="style" ref="lavContainer"></div>
 </template>
 
 <script>
-  import lottie from 'lottie-web';
-  export default {
-    props: {
-      options: {
-        type: Object,
-        required: true
-      },
-      height: Number,
-      width: Number,
-    },
+import lottie from 'lottie-web';
 
-    data () {
-      return {
-        style: {
-          width: this.width ? `${this.width}px` : '100%',
-          height: this.height ? `${this.height}px` : '100%',
-          overflow: 'hidden',
-          margin: '0 auto'
-        }
-      }
+export default {
+  props: {
+    options: {
+      type: Object,
+      required: true
     },
-    mounted () {
-      // console.log(this.options.animationData.default)
-      this.anim = lottie.loadAnimation({
-          container: this.$refs.lavContainer,
-          renderer: 'svg',
-          loop: this.options.loop !== true,
-          autoplay: this.options.autoplay !== false,
-          animationData: this.options.animationData.default,  // ここだけ変更何故かデフォルトを入れないと動かなかった… (要検証)
-          rendererSettings: this.options.rendererSettings
-        }
-      );
-      this.$emit('animCreated', this.anim)
+    height: Number,
+    width: Number,
+  },
+  data () {
+    return {
+      style: {
+        width: this.width ? `${this.width}px` : '100%',
+        height: this.height ? `${this.height}px` : '100%',
+        overflow: 'hidden',
+        margin: '0 auto'
+      }
     }
+  },
+  mounted () {
+    this.anim = lottie.loadAnimation({
+        container: this.$refs.lavContainer,
+        renderer: 'svg',
+        loop: this.options.loop !== false,
+        autoplay: this.options.autoplay !== false,
+        animationData: this.options.animationData.default,
+        rendererSettings: this.options.rendererSettings
+      }
+    );
+    this.$emit('animCreated', this.anim)
   }
+}
 </script>

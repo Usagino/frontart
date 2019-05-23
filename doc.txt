@@ -1,0 +1,23 @@
+6:49:02 PM: ERROR in ./pages/index.vue?vue&type=script&lang=js& (./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=script&lang=js&)
+
+6:49:02 PM: Module not found: Error: Can't resolve '~/components/Lottie.vue' in '/opt/build/repo/pages'
+
+6:49:05 PM: failed during stage 'building site': Build script returned non-zero exit code: 1
+
+6:49:02 PM:  @ ./pages/index.vue?vue&type=script&lang=js& (./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=script&lang=js&) 14:0-45 18:12-18
+
+6:49:05 PM: Shutting down logging, 33 messages pending
+
+lottie.first-view__wrap--image(
+  :options="lottieOptions"
+  v-on:animCreated="handleAnimation")
+
+
+  data(){
+    return {
+      lottieOptions: {
+        animationData: animationData,
+        loop: true,
+      },
+    }
+  },
