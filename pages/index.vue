@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
     cursorPointer
-    sideMenu
+    
     section
       .first
         .first__wrap
