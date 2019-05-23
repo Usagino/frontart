@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-site",
+  "name": "frontart",
   "version": "1.0.0",
   "description": "Nuxt.js project",
   "author": "Usagino <yuki.itoh@front-artgraph.com>",
@@ -32,8 +32,6 @@
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-vue": "^4.0.0",
-    "jquery": "^3.4.1",
-    "lottie-web": "^5.5.2",
     "node-sass": "^4.12.0",
     "vue-lottie": "^0.2.1",
     "vuex": "^3.1.0"
