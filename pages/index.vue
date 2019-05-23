@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
     cursorPointer
-    
+
     section
       .first
         .first__wrap
@@ -14,14 +14,12 @@
 <script>
 import * as animationData from "~/assets/json/my_logo.json";
 import Lottie from "~/components/Lottie.vue";
-import sideMenu from "~/components/sideMenu.vue";
 import cursorPointer from '@/components/cursorPointer'
 
 export default {
   components: {
     Lottie,
     cursorPointer,
-    sideMenu
   },
   data(){
     return {
